@@ -1,15 +1,66 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="hues_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.5" alignment="left" id="4xe-kK-lyh">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="yOI-AV-H1h">
+                                    <connections>
+                                        <action selector="tlButtonPressed" destination="AgC-eL-Hgc" id="Ayb-GM-e0U"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="r1W-TN-IHV">
+                                    <connections>
+                                        <action selector="trButtonPressed" destination="AgC-eL-Hgc" id="c8E-hT-UHY"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" widthAdjustment="0.5" alignment="left" id="YQ2-cd-DfF">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="xqb-S4-mPO">
+                                    <connections>
+                                        <action selector="blButtonPressed" destination="AgC-eL-Hgc" id="YPd-zg-GXI"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="bdE-RP-Crw">
+                                    <connections>
+                                        <action selector="brButtonPressed" destination="AgC-eL-Hgc" id="Ydk-tt-CcQ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="q0y-x8-Qgz">
+                        <items>
+                            <menuItem title="Done " icon="resume" id="fyF-KV-WyD" userLabel="Restart">
+                                <connections>
+                                    <action selector="startNewGame" destination="AgC-eL-Hgc" id="uhp-hn-bMK"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="blButton" destination="xqb-S4-mPO" id="Pzo-Y9-VXy"/>
+                        <outlet property="brButton" destination="bdE-RP-Crw" id="xoz-VT-j7g"/>
+                        <outlet property="tlButton" destination="yOI-AV-H1h" id="bbb-P3-e8j"/>
+                        <outlet property="trButton" destination="r1W-TN-IHV" id="Nj0-Kh-Jkj"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-377" y="-20"/>
         </scene>
     </scenes>
 </document>
