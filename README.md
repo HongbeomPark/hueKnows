@@ -1,6 +1,6 @@
 # hueKnows - color picking game on apple watch
 
-Watch presents you with four colors and repeat it 10 times. Your goal is to pick the wrong color among the four as quick as possible. The qucikest perosn wins. 
+Watch presents you with four colors and repeat it 10 times. Your goal is to pick the wrong color among the four as quickly as possible. The qucikest perosn wins. 
 
 ## Getting Started
 
